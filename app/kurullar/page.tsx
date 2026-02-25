@@ -10,7 +10,7 @@ const bilimselKurul = [
   // Diğer üyeler buraya eklenecek
 ]
 
-const organizasyonKurul = [
+const organizasyonKurul: { isim: string; kurum: string; rol?: string }[] = [
   // Organizasyon komitesi üyeleri buraya eklenecek
 ]
 
