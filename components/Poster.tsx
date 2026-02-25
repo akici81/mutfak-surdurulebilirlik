@@ -1,4 +1,4 @@
-// Poster.tsx — Etkinlik afişinin tüm içeriği
+type ProgramCell = { konu: string; egitmen: string; renk?: string } | null
 
 const egitmenler = [
   {
@@ -54,7 +54,7 @@ const egitmenler = [
   },
 ]
 
-const program = [
+const program: { saat: string; gunler: ProgramCell[] }[] = [
   {
     saat: '8:00–8:45',
     gunler: [
