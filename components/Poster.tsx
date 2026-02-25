@@ -54,7 +54,9 @@ const egitmenler = [
   },
 ]
 
-const program = [
+type ProgramHucresi = { konu: string; egitmen: string; renk?: string } | null
+
+const program: { saat: string; gunler: ProgramHucresi[] }[] = [
   {
     saat: '8:00–8:45',
     gunler: [
