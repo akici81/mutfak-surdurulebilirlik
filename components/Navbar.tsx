@@ -41,8 +41,9 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-full bg-[var(--color-forest)] flex items-center justify-center text-white text-lg font-bold flex-shrink-0">
-              🌿
+            <div className="flex items-center gap-2 flex-shrink-0">
+              <img src="/neu-logo.png" alt="NEÜ" className="w-10 h-10 object-contain" />
+              <img src="/tubitak-logo.png" alt="TÜBİTAK" className="w-8 h-10 object-contain" />
             </div>
             <div className="hidden sm:block">
               <p className="text-xs font-semibold text-[var(--color-sage)] uppercase tracking-widest leading-tight">

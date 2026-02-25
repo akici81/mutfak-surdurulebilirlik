@@ -1,4 +1,4 @@
-type ProgramCell = { konu: string; egitmen: string; renk?: string } | null
+// Poster.tsx — Etkinlik afişinin tüm içeriği
 
 const egitmenler = [
   {
@@ -54,7 +54,7 @@ const egitmenler = [
   },
 ]
 
-const program: { saat: string; gunler: ProgramCell[] }[] = [
+const program = [
   {
     saat: '8:00–8:45',
     gunler: [
@@ -132,9 +132,7 @@ export default function Poster() {
 
       {/* HEADER */}
       <div className="bg-white border-b-4 border-[#2d6a2d] px-6 py-4 flex items-center justify-between gap-4">
-        <div className="w-16 h-16 flex-shrink-0 bg-gray-100 rounded-full flex items-center justify-center text-xs text-gray-400 font-bold">
-          NEÜ
-        </div>
+        <img src="/neu-logo.png" alt="NEÜ" className="w-16 h-16 object-contain flex-shrink-0" />
         <div className="text-center flex-1">
           <p className="text-xs font-extrabold text-gray-900 uppercase tracking-wide">
             TÜBİTAK Ulusal Destek Programları – 4005
@@ -146,9 +144,7 @@ export default function Poster() {
             <strong>Koordinatör:</strong> Doç. Dr. Eda GÜNEŞ
           </p>
         </div>
-        <div className="w-16 h-16 flex-shrink-0 bg-gray-100 rounded-full flex items-center justify-center text-xs text-gray-400 font-bold">
-          TÜBİTAK
-        </div>
+        <img src="/tubitak-logo.png" alt="TÜBİTAK" className="w-16 h-16 object-contain flex-shrink-0" />
       </div>
 
       {/* HERO */}

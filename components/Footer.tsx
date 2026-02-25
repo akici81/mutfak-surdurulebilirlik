@@ -8,9 +8,8 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-xl">
-                🌿
-              </div>
+              <img src="/neu-logo.png" alt="NEÜ" className="w-10 h-10 object-contain" />
+              <img src="/tubitak-logo.png" alt="TÜBİTAK" className="w-8 h-10 object-contain brightness-0 invert" />
               <div>
                 <p className="text-xs text-white/60 uppercase tracking-widest">TÜBİTAK 4005</p>
                 <p className="font-display font-bold text-white">Mutfakta Sürdürülebilirlik</p>
